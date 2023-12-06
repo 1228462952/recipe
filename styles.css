@@ -160,13 +160,16 @@ footer {
     justify-content: center;
     align-items: center;
         font-size: 20px;
+            font-family: 'Bebas Neue';
+            
 }
 
 footer div{
     display: grid;
-    justify-content: center;
-    align-items: center;
+    
+
 }
+
 
 footer img{
     grid-column:1;
@@ -179,14 +182,11 @@ footer small {
     grid-row: 2;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
+    color: #0D0D0D;
+    width:20%;
 }
 
-small {
-    display: block;
-    margin-top: 1rem;
-    color: #aaa;
-}
+
 
 @media screen and (min-width: 768px) {
     body {
