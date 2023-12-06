@@ -56,10 +56,12 @@ li {
     font-family: 'Montserrat';
 
 }
-.ingred-direct{
+
+.ingred-direct {
     display: flex;
     flex-direction: column;
 }
+
 .ingredients ul {
     list-style-type: square;
     padding-left: 25px;
@@ -100,16 +102,15 @@ header img {
     height: auto;
 }
 
-.side-dishes{
+.side-dishes {
     background-color: #7ABFBF;
 }
 
-.side-dish-grid{
+.side-dish-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 40px;
-    margin-bottom: 10px;
     padding: 10px;
 }
 
@@ -129,7 +130,7 @@ header img {
 .dish-title {
     grid-column: 2;
     grid-row: 1;
-        padding-left: 20px;
+    padding-left: 20px;
 
 }
 
@@ -138,13 +139,13 @@ header img {
 .dish-content {
     grid-column: 2;
     grid-row: 2;
-        padding-left: 20px;
-        padding-top: 15px;
+    padding-left: 20px;
+    padding-top: 15px;
 }
 
-.dish-content p{
+.dish-content p {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .dish-content p+p {
@@ -153,10 +154,32 @@ header img {
 
 
 footer {
-    background: #333;
-    color: #fff;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        font-size: 20px;
+}
+
+footer div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    grid-column:1;
+    grid-row: 1;
+    width:40%;
+}
+
+footer small {
+    grid-column: 1;
+    grid-row: 2;
     text-align: center;
-    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 small {
@@ -166,32 +189,34 @@ small {
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    body {
         width: 768px;
     }
-    .ingred-direct{
+
+    .ingred-direct {
         flex-direction: row;
         column-gap: 60px;
     }
-    dl{
+
+    dl {
         text-align: center;
     }
 
-    .side-dish-grid{
+    .side-dish-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        column-gap:10px;
+        column-gap: 10px;
     }
 
-    .action-icons{
+    .action-icons {
         position: absolute;
         z-index: 3;
-        width:768px;
+        width: 768px;
         background-color: rgba(255, 255, 255, 0.7);
 
     }
 
-    h1{
+    h1 {
         text-align: left;
         padding-left: 20px;
     }
@@ -203,65 +228,68 @@ small {
     body {
         width: 1280px;
     }
+
     .side-dish-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
+        column-gap: 50px;
     }
 
-        .side-dish {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    .side-dish {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.5fr 0.25fr 0.25fr;
 
-        }
-    
-        .dish-image {
-            grid-column: 1;
-            grid-row: 1;
-            height: 100px;
-        }
-    
-        .dish-title {
-            grid-column: 1;
-            grid-row: 2;
-            padding-left: 20px;
-    
-        }
-    
-    
-    
-        .dish-content {
-            grid-column: 1;
-            grid-row: 3;
-            padding-left: 20px;
-        }
+    }
 
-        .recipe-intro{
-            display:flex;
-            flex-direction: row;
-        }
+    .dish-image {
+        grid-column: 1;
+        grid-row: 1;
+        height: 250px;
+    }
 
-        .recipe-intro img{
-            width:40%;
-        }
-                 .action-icons {
-                     position: relative;
-                     width: 30%;
-                     background-color: rgba(255, 255, 255, 0.7);
-        
-                 }
+    .dish-title {
+        grid-column: 1;
+        grid-row: 2;
+        padding-left: 0px;
+        width:80%;
+    }
 
-                 .action-icons ul{
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    height: 50%;
-                 }
-        
-                 h1 {
-                     text-align: center;
-                     padding-left: 20px;
-                 }
+    .dish-content {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 0px;
+                width: 80%;
+    }
 
-    
+    .recipe-intro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-intro img {
+        width: 40%;
+    }
+
+    .action-icons {
+        position: relative;
+        width: 30%;
+        background-color: white;
+        border: solid 3px #EB5428;
+
+    }
+
+    .action-icons ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+    }
+
+    h1 {
+        text-align: center;
+        padding-left: 20px;
+    }
+
+
 }
